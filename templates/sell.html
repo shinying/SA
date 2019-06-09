@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block stylesheet %}
+{% endblock %}
+{% block nevitem %}
+<li class="nav-item">
+    <a class="nav-link" href="/home">調度
+        <span class="sr-only"></span>
+    </a>
+</li>
+<li class="nav-item active">
+    <a class="nav-link" href="#"></a>
+</li>
+<!-- <li class="nav-item">
+    <a class="nav-link" href="/profile">Profile</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/chat">Chat</a>
+</li> -->
+<li class="nav-item">
+    <a class="nav-link" href="/logout">登出</a>
+</li>
+{% endblock %} 
+{% block mainbody %}
+<div class="container">
+    <h2>Sell Something?</h2>
+    <form method="POST" action="." enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="hidden" name="seller" id='seller' value="{{user.pk}}">
+        </div>
+        <div class="form-group">
+            <label for="productname">Product Name:</label>
+            <input type="text" class="form-control" name="productname" id="productname" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" class="form-control" name="price" id="price" placeholder="NTD" required>
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" class="form-control" name="amount" id="amount" placeholder="1" value="1" required>
+        </div>
+        <div class="form-group">
+            <label for="amount">Description:</label>
+            <textarea class="form-control" rows="5" name="information" id="information" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="image">Product Photo</label>
+            <input type="file" value="" onchange="alert(this.value.substr(this.value.lastIndexOf('.')+1))" class="form-control-file" name="profile" id="profile" required>
+        </div>
+        <button type="submit" class="btn btn-sm btn-login">Submit</button>
+    </form>
+</div>
+{% endblock %}

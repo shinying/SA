@@ -16,47 +16,24 @@ from datetime import datetime
 from .algo.estimator import Estimator
 from .algo.model import Task, Tug
 
-def my_dispatch(tasks: List[Task], tugs: List[Tug], sys_time: datetime) -> List[List[Tug]]:
-    """
-    Args:
-        tasks: tasks to be dispatched
-        tugs: tugs currently available
-        sys_time: current time in simulator
-
-    Returns:
-        a list of lists of tugs in the same order as the given tasks
-        a list of expected starting time of the tasks
-
-    Notes:
-        Please implement your own dispatching algorithm with the given input and output format
-        Avoid directly modifing attributes of tasks and tugs
-    """
-    # TODO: dispatch all tasks
-    lists_of_tugs = [[]]
-    start_times = []
-    return lists_of_tugs, start_times
-
-
-def estimate_my_algorithm():
-    """
-    The way to estimate your algorithm
-    """
-    est = Estimator()
-    result = est.run(my_dispatch)
-    result = est.run_hist()
-    est.print_result(result, verbose=True)
-
-def estimate_example():
+def estimate_example(algo_id):
     """
     An example to estimate the build-in dispatching algorithm
     See cool_dispatch in algo/greedy/cool.py for reference
     """
     est = Estimator()
     from .algo.greedy.cool import cool_dispatch
-    from .algo.greedy.efficient import efficient_dispatch
-    est.set_range(100, 120)
-    kh = est.run(cool_dispatch, verbose=False)
-    est.print_result(kh)
+    from .algo.greedy.timeline import timeline_dispatch
+    est.set_range(100, 110)
+    if algo_id == "1":
+        kh = est.run(cool_dispatch, verbose=False)
+        est.print_result(kh)
+        est.draw(kh)
+    elif algo_id == "2":
+        kh = est.run(timeline_dispatch, verbose=False)
+        est.print_result(kh)
+        est.draw(kh)
+
 
 @login_required
 def home(request):
@@ -74,18 +51,25 @@ def home(request):
     task_out = random.randint(0,10-task_in)
     task_trans = random.randint(0,15-task_in - task_out)
     event = ["開始時間延遲","工作時間延遲","工作取消","加船","換船"]
-    pre_event = event[random.randint(0,4)]
-    tug_first = random.randint(100,405)
-    tug_second = random.randint(300, 605)   
+    pre_event = event[0]
+    tug_first = 350
+    tug_second = 432  
     username = request.user.username
+    print(request.POST)
+    if 'change_algo' in request.POST:
+        algo_id = request.POST['change_algo']
+    else:
+        algo_id = "1"
+    algorithm = ["關鍵資源優先演算法","開始時間優先演算法"]
+    algo = algorithm[int(algo_id)-1] 
     if 'searchproduct' in request.POST:
         productname = request.POST["productname"]
         products1 = Product.objects.filter(productname__icontains=productname)
         products2 = Product.objects.filter(information__icontains=productname)
         products = (list(set(chain(products1, products2))))
 
-    elif 'start_dispatch' in request.POST:
-        estimate_example()
+    # elif 'start_dispatch' in request.POST:
+    #     estimate_example(algo_id)
 
     elif 'update' in request.POST:
         next_weight = random.randint(10000,100000)

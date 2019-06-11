@@ -94,8 +94,6 @@ class Simulator:
             if t.tug_id in unique_tug_id and t.tug_id in pre_tugs_id and t.tug_id not in collect_tug_id:
                 for pre_t in self.pre_duty_tugs:
                         if t.tug_id == pre_t.tug_id:
-                            print("previous next avai time:",pre_t.next_available_time)
-                            print("new next avai time:",t.next_available_time)
                             t.next_available_time = pre_t.next_available_time
             if t.tug_id in unique_tug_id and t.tug_id not in collect_tug_id and t not in set(unique_tugs):
                 ## update the tugs next_available time if keep on duty
@@ -107,8 +105,8 @@ class Simulator:
                     if self.all_tugs[i].tug_id not in unique_tug_id:
                         unique_tugs.append(self.all_tugs[i])
                         unique_tug_id = list(set([ i.tug_id  for i in unique_tugs]))
-        for i in unique_tugs:
-            print("tug on duty",i.tug_id,"next_available_time",i.next_available_time) 
+        # for i in unique_tugs:
+        #     print("tug on duty",i.tug_id,"next_available_time",i.next_available_time) 
         self.pre_duty_tugs = unique_tugs
         assert len(unique_tugs) >= 2, 'not enough tug to dispatch, if ask for three tugs {}'.format(unique_tugs)
         return unique_tugs

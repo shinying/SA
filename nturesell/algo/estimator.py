@@ -454,7 +454,7 @@ class Estimator():
             return
         if 'sum' in result:
             result = result['sum']
-            ganttplot(result['tasks'], result['tugs'])
+        ganttplot(result['tasks'], result['tugs'])
 
     
     

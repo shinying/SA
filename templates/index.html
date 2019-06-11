@@ -82,8 +82,14 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">演算法:</h6>
-            <a class="collapse-item" href="#">關鍵資源優先演算法</a>
-            <a class="collapse-item" href="#">開始時間優先演算法</a>
+            <form method="POST" action='.'>
+              <input name="change_algo" value="1" type="hidden"></input>
+              <button class="collapse-item" type="submit">關鍵資源優先演算法</button>
+            </form>
+            <form method="POST" action='.'>
+              <input name="change_algo" value="2" type="hidden"></input>
+              <button class="collapse-item" type="submit">開始時間優先演算法</button>
+            </form>
           </div>
         </div>
       </li>
@@ -256,9 +262,12 @@
             <form action="." method="POST" class="card card-sm">
               <button type="submit" name="update" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50" ></i>立即更新</a>
             </form>
-            <form action="." method="POST" class="card card-sm">
-              <button class="btn btn-lg btn-login" type="submit" name="start_dispatch">開始調派</button>
-            </form>
+            <ul>
+              <form action="." method="POST" class="card card-sm">
+                <button class="btn btn-lg btn-login" type="submit" name="start_dispatch"> {{algo}}</button>
+              </form>
+              </ul>
+    
           </div>
 
           <!-- Content Row -->
@@ -343,7 +352,6 @@
             </div>
 
           <!-- Content Row -->
-
           <div class="row">
 
             <!-- Area Chart -->

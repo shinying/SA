@@ -36,7 +36,7 @@ def ganttplot(tasks, tugs):
 
     fig = ff.create_gantt(df, colors=colors, index_col='Resource',
                           show_colorbar=True, group_tasks=True)
-    pp.plot(fig, filename='task-gantt', world_readable=True)
+    pp.plot(fig, filename='task-gantt', world_readable=True, auto_open=False)
 
     df = []
     for tug in tugs:

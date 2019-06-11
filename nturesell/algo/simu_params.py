@@ -1,17 +1,17 @@
 ROUTINE_DISPATCH = 60
-HELP_FAILED_PROB = 0.05
+HELP_FAILED_PROB = 0
 
 ## ---- Confirmed-related probobility ----
 
-ADD_TUG_PROB = 0.05 # 1 / (88.51 * 1.5) = once per 1 ~ 2 days
-ADD_POWER_PROB = 0.01  # 1.5 / 619.5 = once ~ twice per week
-ADD_TUG_PROB_SEVERE = 0.25
+ADD_TUG_PROB = 0 # 1 / (88.51 * 1.5) = once per 1 ~ 2 days
+ADD_POWER_PROB = 0  # 1.5 / 619.5 = once ~ twice per week
+ADD_TUG_PROB_SEVERE = 0
 
 ## ------ Delay-related parameters ------
 
 START_DELAY_PROB_IN = 0
-START_DELAY_PROB_OUT = 0.25
-START_DELAY_PROB_TR = 0.25
+START_DELAY_PROB_OUT = 0
+START_DELAY_PROB_TR = 0
 
 NOTICE_BEFOREHAND = 30
 
@@ -21,10 +21,10 @@ MAX_START_DELAY_TR = 120
 
 MAX_START_DELAY_TOLERANCE = 60
 
-TEMP_NEED_PROB_IN = 0.2 # less than once a week 0.0016
-TEMP_NEED_PROB_OUT = 0.2
-TEMP_NEED_PROB_TR = 0.2
+TEMP_NEED_PROB_IN = 0 # less than once a week 0.0016
+TEMP_NEED_PROB_OUT = 0
+TEMP_NEED_PROB_TR = 0
 
-CANCEL_PROB_IN = 0.01
-CANCEL_PROB_OUT = 0.01
-CANCEL_PROB_TR = 0.01
+CANCEL_PROB_IN = 0
+CANCEL_PROB_OUT = 0
+CANCEL_PROB_TR = 0

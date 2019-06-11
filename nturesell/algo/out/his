@@ -1,0 +1,443 @@
+======== Task 0 Result ========
+* Ship ID: 350796
+* Should Started at: 2017-01-02 06:14
+* Started at: 2017-01-02 06:14
+* Working time: 15.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 25881
+* Delay_time:0:00:00
+
+* Tug Set :112 
+* Required Tugs: [118]
+* Dispatched Tugs [118]
+
+* Revenue: 10846
+* Waiting_cost: 0.0 
+* Moving_cost: 207.804172351517
+* Profit: 10638.195827648484
+
+======== Task 1 Result ========
+* Ship ID: 444154
+* Should Started at: 2017-01-02 06:29
+* Started at: 2017-01-02 06:33
+* Working time: 33.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 5757
+* Delay_time:0:04:00
+
+* Tug Set :322 
+* Required Tugs: [118]
+* Dispatched Tugs [119]
+
+* Revenue: 10846
+* Waiting_cost: 4.0 
+* Moving_cost: 487.7403048687208
+* Profit: 10358.259695131279
+
+======== Task 2 Result ========
+* Ship ID: 50334
+* Should Started at: 2017-01-02 06:27
+* Started at: 2017-01-02 06:34
+* Working time: 29.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 15636
+* Delay_time:0:07:00
+
+* Tug Set :165 
+* Required Tugs: [118]
+* Dispatched Tugs [130]
+
+* Revenue: 10846
+* Waiting_cost: 7.0 
+* Moving_cost: 0.0
+* Profit: 10846.0
+
+======== Task 4 Result ========
+* Ship ID: 35629
+* Should Started at: 2017-01-02 06:28
+* Started at: 2017-01-02 06:28
+* Working time: 10.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 15995
+* Delay_time:0:00:00
+
+* Tug Set :171 
+* Required Tugs: [118]
+* Dispatched Tugs [130]
+
+* Revenue: 10846
+* Waiting_cost: 0.0 
+* Moving_cost: 60.07175139228029
+* Profit: 10785.928248607719
+
+======== Task 5 Result ========
+* Ship ID: 947261
+* Should Started at: 2017-01-02 06:46
+* Started at: 2017-01-02 06:50
+* Working time: 46.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 24625
+* Delay_time:0:04:00
+
+* Tug Set :112 
+* Required Tugs: [118]
+* Dispatched Tugs [118]
+
+* Revenue: 16269.0
+* Waiting_cost: 4.0 
+* Moving_cost: 487.7403048687208
+* Profit: 15781.259695131279
+
+======== Task 6 Result ========
+* Ship ID: 439347
+* Should Started at: 2017-01-02 06:51
+* Started at: 2017-01-02 06:55
+* Working time: 31.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 4030
+* Delay_time:0:04:00
+
+* Tug Set :145 
+* Required Tugs: [117]
+* Dispatched Tugs [117]
+
+* Revenue: 7395
+* Waiting_cost: 4.0 
+* Moving_cost: 487.7403048687208
+* Profit: 6907.259695131279
+
+======== Task 8 Result ========
+* Ship ID: 358223
+* Should Started at: 2017-01-02 07:09
+* Started at: 2017-01-02 07:12
+* Working time: 45.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 21072
+* Delay_time:0:03:00
+
+* Tug Set :321 451 
+* Required Tugs: [118, 119]
+* Dispatched Tugs [119, 130]
+
+* Revenue: 45849.0
+* Waiting_cost: 3.0 
+* Moving_cost: 975.4806097374416
+* Profit: 44873.51939026256
+
+======== Task 9 Result ========
+* Ship ID: 387118
+* Should Started at: 2017-01-02 07:35
+* Started at: 2017-01-02 07:35
+* Working time: 55.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 4675
+* Delay_time:0:00:00
+
+* Tug Set :145 
+* Required Tugs: [117]
+* Dispatched Tugs [117]
+
+* Revenue: 11092.5
+* Waiting_cost: 0.0 
+* Moving_cost: 366.3581507849086
+* Profit: 10726.141849215091
+
+======== Task 10 Result ========
+* Ship ID: 2089
+* Should Started at: 2017-01-02 07:26
+* Started at: 2017-01-02 07:31
+* Working time: 19.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 14807
+* Delay_time:0:05:00
+
+* Tug Set :106 
+* Required Tugs: [118]
+* Dispatched Tugs [119]
+
+* Revenue: 10846
+* Waiting_cost: 5.0 
+* Moving_cost: 0.0
+* Profit: 10846.0
+
+======== Task 11 Result ========
+* Ship ID: 47198
+* Should Started at: 2017-01-02 07:40
+* Started at: 2017-01-02 07:40
+* Working time: 10.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 2812
+* Delay_time:0:00:00
+
+* Tug Set :245 
+* Required Tugs: [117]
+* Dispatched Tugs [118]
+
+* Revenue: 7395
+* Waiting_cost: 0.0 
+* Moving_cost: 364.19147786906973
+* Profit: 7030.80852213093
+
+======== Task 12 Result ========
+* Ship ID: 329932
+* Should Started at: 2017-01-02 07:32
+* Started at: 2017-01-02 07:37
+* Working time: 38.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 4825
+* Delay_time:0:05:00
+
+* Tug Set :241 
+* Required Tugs: [117]
+* Dispatched Tugs [118]
+
+* Revenue: 7395
+* Waiting_cost: 5.0 
+* Moving_cost: 487.7403048687208
+* Profit: 6907.259695131279
+
+======== Task 13 Result ========
+* Ship ID: 51241
+* Should Started at: 2017-01-02 07:36
+* Started at: 2017-01-02 07:42
+* Working time: 32.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 12405
+* Delay_time:0:06:00
+
+* Tug Set :162 
+* Required Tugs: [118]
+* Dispatched Tugs [120]
+
+* Revenue: 10846
+* Waiting_cost: 6.0 
+* Moving_cost: 0.0
+* Profit: 10846.0
+
+======== history_SUMMARY ========
+Revenue: 160471.50
+Total_waiting_cost: 38.00
+Total_moving_cost: 3924.87
+Profit: 156508.63
+======== Task 0 Result ========
+* Ship ID: 350796
+* Should Started at: 2017-01-02 06:14
+* Started at: 2017-01-02 06:14
+* Working time: 15.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 25881
+* Delay_time:0:00:00
+
+* Tug Set :112 
+* Required Tugs: [118]
+* Dispatched Tugs [118]
+
+* Revenue: 10846
+* Waiting_cost: 0.0 
+* Moving_cost: 207.804172351517
+* Profit: 10638.195827648484
+
+======== Task 1 Result ========
+* Ship ID: 444154
+* Should Started at: 2017-01-02 06:29
+* Started at: 2017-01-02 06:33
+* Working time: 33.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 5757
+* Delay_time:0:04:00
+
+* Tug Set :322 
+* Required Tugs: [118]
+* Dispatched Tugs [119]
+
+* Revenue: 10846
+* Waiting_cost: 4.0 
+* Moving_cost: 487.7403048687208
+* Profit: 10358.259695131279
+
+======== Task 2 Result ========
+* Ship ID: 50334
+* Should Started at: 2017-01-02 06:27
+* Started at: 2017-01-02 06:34
+* Working time: 29.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 15636
+* Delay_time:0:07:00
+
+* Tug Set :165 
+* Required Tugs: [118]
+* Dispatched Tugs [130]
+
+* Revenue: 10846
+* Waiting_cost: 7.0 
+* Moving_cost: 0.0
+* Profit: 10846.0
+
+======== Task 4 Result ========
+* Ship ID: 35629
+* Should Started at: 2017-01-02 06:28
+* Started at: 2017-01-02 06:28
+* Working time: 10.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 15995
+* Delay_time:0:00:00
+
+* Tug Set :171 
+* Required Tugs: [118]
+* Dispatched Tugs [130]
+
+* Revenue: 10846
+* Waiting_cost: 0.0 
+* Moving_cost: 60.07175139228029
+* Profit: 10785.928248607719
+
+======== Task 5 Result ========
+* Ship ID: 947261
+* Should Started at: 2017-01-02 06:46
+* Started at: 2017-01-02 06:50
+* Working time: 46.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 24625
+* Delay_time:0:04:00
+
+* Tug Set :112 
+* Required Tugs: [118]
+* Dispatched Tugs [118]
+
+* Revenue: 16269.0
+* Waiting_cost: 4.0 
+* Moving_cost: 487.7403048687208
+* Profit: 15781.259695131279
+
+======== Task 6 Result ========
+* Ship ID: 439347
+* Should Started at: 2017-01-02 06:51
+* Started at: 2017-01-02 06:55
+* Working time: 31.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 4030
+* Delay_time:0:04:00
+
+* Tug Set :145 
+* Required Tugs: [117]
+* Dispatched Tugs [117]
+
+* Revenue: 7395
+* Waiting_cost: 4.0 
+* Moving_cost: 487.7403048687208
+* Profit: 6907.259695131279
+
+======== Task 8 Result ========
+* Ship ID: 358223
+* Should Started at: 2017-01-02 07:09
+* Started at: 2017-01-02 07:12
+* Working time: 45.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 21072
+* Delay_time:0:03:00
+
+* Tug Set :321 451 
+* Required Tugs: [118, 119]
+* Dispatched Tugs [119, 130]
+
+* Revenue: 45849.0
+* Waiting_cost: 3.0 
+* Moving_cost: 975.4806097374416
+* Profit: 44873.51939026256
+
+======== Task 9 Result ========
+* Ship ID: 387118
+* Should Started at: 2017-01-02 07:35
+* Started at: 2017-01-02 07:35
+* Working time: 55.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 4675
+* Delay_time:0:00:00
+
+* Tug Set :145 
+* Required Tugs: [117]
+* Dispatched Tugs [117]
+
+* Revenue: 11092.5
+* Waiting_cost: 0.0 
+* Moving_cost: 366.3581507849086
+* Profit: 10726.141849215091
+
+======== Task 10 Result ========
+* Ship ID: 2089
+* Should Started at: 2017-01-02 07:26
+* Started at: 2017-01-02 07:31
+* Working time: 19.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 14807
+* Delay_time:0:05:00
+
+* Tug Set :106 
+* Required Tugs: [118]
+* Dispatched Tugs [119]
+
+* Revenue: 10846
+* Waiting_cost: 5.0 
+* Moving_cost: 0.0
+* Profit: 10846.0
+
+======== Task 11 Result ========
+* Ship ID: 47198
+* Should Started at: 2017-01-02 07:40
+* Started at: 2017-01-02 07:40
+* Working time: 10.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 2812
+* Delay_time:0:00:00
+
+* Tug Set :245 
+* Required Tugs: [117]
+* Dispatched Tugs [118]
+
+* Revenue: 7395
+* Waiting_cost: 0.0 
+* Moving_cost: 364.19147786906973
+* Profit: 7030.80852213093
+
+======== Task 12 Result ========
+* Ship ID: 329932
+* Should Started at: 2017-01-02 07:32
+* Started at: 2017-01-02 07:37
+* Working time: 38.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 4825
+* Delay_time:0:05:00
+
+* Tug Set :241 
+* Required Tugs: [117]
+* Dispatched Tugs [118]
+
+* Revenue: 7395
+* Waiting_cost: 5.0 
+* Moving_cost: 487.7403048687208
+* Profit: 6907.259695131279
+
+======== Task 13 Result ========
+* Ship ID: 51241
+* Should Started at: 2017-01-02 07:36
+* Started at: 2017-01-02 07:42
+* Working time: 32.0 mins
+* State: UNPROCESSED_UNASSIGNED
+* Weight: 12405
+* Delay_time:0:06:00
+
+* Tug Set :162 
+* Required Tugs: [118]
+* Dispatched Tugs [120]
+
+* Revenue: 10846
+* Waiting_cost: 6.0 
+* Moving_cost: 0.0
+* Profit: 10846.0
+
+======== EFFICIENT_SUMMARY ========
+Revenue: 160471.50
+Total_waiting_cost: 38.00
+Total_moving_cost: 3924.87
+Profit: 156508.63
+High five! You successfully sent some data to your account on plotly. View your plot in your browser at https://plot.ly/~angyeahyeah6/0 or inside your plot.ly account where it is named 'task-gantt'

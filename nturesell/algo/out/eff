@@ -1,0 +1,97 @@
+Task 0: ship 350796
+* Depart at: 2017-01-02 06:14
+* From 1058 to 9002
+* Goes: OUT
+* Side: OPTIONAL
+* Delay_time: 0:00:00
+
+
+Task 1: ship 444154
+* Depart at: 2017-01-02 06:33
+* From 9001 to 1051
+* Goes: IN
+* Side: OPTIONAL
+* Delay_time: 0:04:00
+
+
+Task 2: ship 50334
+* Depart at: 2017-01-02 07:18
+* From 9002 to 1076
+* Goes: IN
+* Side: RIGHT
+* Delay_time: 0:06:12
+
+
+Task 4: ship 35629
+* Depart at: 2017-01-02 06:42
+* From 1117 to 9002
+* Goes: OUT
+* Side: OPTIONAL
+* Delay_time: 0:14:52
+
+
+Task 5: ship 947261
+* Depart at: 2017-01-02 08:44
+* From 9001 to 1058
+* Goes: IN
+* Side: LEFT
+* Delay_time: 0:04:00
+
+
+Task 6: ship 439347
+* Depart at: 2017-01-02 08:20
+* From 9001 to 1031
+* Goes: IN
+* Side: OPTIONAL
+* Delay_time: 0:18:19
+
+
+Task 8: ship 358223
+* Depart at: 2017-01-02 07:12
+* From 9001 to 1055
+* Goes: IN
+* Side: OPTIONAL
+* Delay_time: 0:03:00
+
+
+Task 9: ship 387118
+* Depart at: 2017-01-02 07:35
+* From 1040 to 1122
+* Goes: TRANSFER
+* Side: OPTIONAL
+* Delay_time: 0:00:00
+
+
+Task 10: ship 2089
+* Depart at: 2017-01-02 08:38
+* From 9002 to 1117
+* Goes: IN
+* Side: LEFT
+* Delay_time: 0:05:00
+
+
+Task 11: ship 47198
+* Depart at: 2017-01-02 08:41
+* From 1043 to 9001
+* Goes: OUT
+* Side: OPTIONAL
+* Delay_time: 0:19:32
+
+
+Task 12: ship 329932
+* Depart at: 2017-01-02 07:37
+* From 9001 to 1040
+* Goes: IN
+* Side: OPTIONAL
+* Delay_time: 0:05:00
+
+
+Task 13: ship 51241
+* Depart at: 2017-01-02 07:42
+* From 9002 to 1081
+* Goes: IN
+* Side: LEFT
+* Delay_time: 0:06:00
+
+
+Time usage: 33.43 secs

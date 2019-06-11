@@ -9,24 +9,117 @@ from django.contrib.auth.decorators import login_required
 from itertools import chain
 import hashlib
 import os
+import random
+
+from typing import List
+from datetime import datetime
+from .algo.estimator import Estimator
+from .algo.model import Task, Tug
+
+def my_dispatch(tasks: List[Task], tugs: List[Tug], sys_time: datetime) -> List[List[Tug]]:
+    """
+    Args:
+        tasks: tasks to be dispatched
+        tugs: tugs currently available
+        sys_time: current time in simulator
+
+    Returns:
+        a list of lists of tugs in the same order as the given tasks
+        a list of expected starting time of the tasks
+
+    Notes:
+        Please implement your own dispatching algorithm with the given input and output format
+        Avoid directly modifing attributes of tasks and tugs
+    """
+    # TODO: dispatch all tasks
+    lists_of_tugs = [[]]
+    start_times = []
+    return lists_of_tugs, start_times
+
+
+def estimate_my_algorithm():
+    """
+    The way to estimate your algorithm
+    """
+    est = Estimator()
+    result = est.run(my_dispatch)
+    result = est.run_hist()
+    est.print_result(result, verbose=True)
+
+def estimate_example():
+    """
+    An example to estimate the build-in dispatching algorithm
+    See cool_dispatch in algo/greedy/cool.py for reference
+    """
+    est = Estimator()
+    from .algo.greedy.cool import cool_dispatch
+    from .algo.greedy.efficient import efficient_dispatch
+    est.set_range(100, 120)
+    kh = est.run(cool_dispatch, verbose=False)
+    est.print_result(kh)
 
 @login_required
 def home(request):
+    next_weight = random.randint(10000,100000)
+    harbor1 = random.randint(1,121)
+    harbor2 = random.randint(1,121)
+    if harbor1 < 40:
+        nextpilot = "信穎棒"
+    elif harbor1 >= 40 and harbor1 < 90:
+        nextpilot = "王小明"
+    else:
+        nextpilot = "料理鼠"
+
+    task_in = random.randint(0,10)
+    task_out = random.randint(0,10-task_in)
+    task_trans = random.randint(0,15-task_in - task_out)
+    event = ["開始時間延遲","工作時間延遲","工作取消","加船","換船"]
+    pre_event = event[random.randint(0,4)]
+    tug_first = random.randint(100,405)
+    tug_second = random.randint(300, 605)   
+    username = request.user.username
     if 'searchproduct' in request.POST:
         productname = request.POST["productname"]
         products1 = Product.objects.filter(productname__icontains=productname)
         products2 = Product.objects.filter(information__icontains=productname)
         products = (list(set(chain(products1, products2))))
+
     elif 'start_dispatch' in request.POST:
-        os.system('python3 ../KHH/code/example.py')
+        estimate_example()
+
+    elif 'update' in request.POST:
+        next_weight = random.randint(10000,100000)
+        harbor1 = random.randint(1,121)
+        harbor2 = random.randint(1,121)
+        if harbor1 < 40:
+            nextpilot = "信穎棒"
+        elif harbor1 >= 40 and harbor1 < 90:
+            nextpilot = "王小明"
+        else:
+            nextpilot = "料理鼠"
+
+        task_in = random.randint(0,10)
+        task_out = random.randint(0,10-task_in)
+        task_trans = random.randint(0,15-task_in - task_out)
+        event = ["開始時間延遲","工作時間延遲","工作取消","加船","換船"]
+        pre_event = event[random.randint(0,4)]
+        tug_first = random.randint(100,405)
+        tug_second = random.randint(300, 605)   
     else:
         products = Product.objects.filter(status=1)
-    
+
     return render(request, 'index.html', locals())
+
 def event(request):
-    return render(request, 'cards.html', locals())
-def register(request):
+    event_type = ["開始時間延遲","工作時間延遲","工作取消","加船","換船"]
+    tugs = [106,309,456,778,990,341,331,109,107,310,331,234,450,550,880]
     if request.method == "POST":
+        return redirect('home')
+    return render(request, 'cards.html', locals())
+
+def register(request):
+    if request.method == "POST" and request.POST["username"] != "":
+        print("in")
         username = request.POST["username"]
         nickname = request.POST["nickname"]
         ntumail = request.POST["ntumail"]
@@ -48,10 +141,11 @@ def register(request):
                     user=user, nickname=nickname, ntumail=ntumail)
                 userinfo.save()
                 message = "Successfully register"
+                return render(request,"login.html", locals())
         else:
             message = "confirm password is different from password"
             return render(request, "login.html", locals())
-    return render(request, "login.html", locals())
+    return render(request, "register.html", locals())
 
 
 def authenticate(request):
@@ -65,8 +159,7 @@ def authenticate(request):
         else:
             message = "Username or password wrong"
             return render(request, "login.html", locals())
-
-    return render(request, "home.html", locals())
+    return render(request, "index.html", locals())
 
 def login(request):
     if request.method == "POST":
